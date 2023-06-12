@@ -281,3 +281,84 @@ console.log(
 // Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
 thomsCloset[1][2] = "Footie Pajamas";
 console.log(thomsCloset);
+
+// IV Functions
+// A. printGreeting
+// Do you think you could write a function called printGreetingwith a parameter namethat returns a greeting with the argument interpolated into the greeting?
+
+printGreeting = (name) => {
+  console.log("Hello there,", name, "!");
+};
+printGreeting("Jessie");
+
+// B. printCool
+// Write a function printCoolthat accepts one parameter, nameas an argument. The function should print the name and a message saying that that person is cool.
+
+printCool = (name) => {
+  console.log(name, "is cool!");
+};
+
+printCool("Chris Evans");
+
+// C. calculateCube
+// Write a function calculateCubethat takes a single number and prints the volume of a cube made from that number.
+
+calculateCube = (num) => {
+  console.log(num ** 3);
+};
+
+calculateCube(5);
+
+// D isVowel
+// Write a function isVowelthat takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.
+
+const isVowel = (letter) => {
+  if (
+    letter === "a" ||
+    letter === "e" ||
+    letter === "i" ||
+    letter === "o" ||
+    letter === "u"
+  ) {
+    console.log(`${letter} is a vowel`);
+  } else {
+    console.log(`${letter} is NOT a vowel`);
+  }
+};
+
+isVowel("a");
+isVowel("d");
+isVowel("9");
+isVowel("frog");
+
+// G. maxOfThree
+// Define a function maxOfThreethat takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.
+const maxOfThree = (a, b, c) => {
+  if (a > b) {
+    if (a > c) return a;
+  } else if (b > c) {
+    return b;
+  } else {
+    return c;
+  }
+};
+
+console.log(maxOfThree(100, 20, 78));
+
+// H. printLongestWord
+// Write a function printLongestWordthat accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+const printLongestWord = (arr) => {
+  let longestCount = 0;
+  let longestWord;
+  arr.forEach((str) => {
+    if (str.length > longestCount) {
+      longestWord = str;
+      longestCount = str.length;
+    }
+  });
+  console.log(
+    `The longest string is ${longestWord} with ${longestCount} characters`
+  );
+};
+
+printLongestWord(["green", "red", "violet"]);
