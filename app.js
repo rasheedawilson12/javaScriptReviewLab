@@ -163,3 +163,60 @@ console.log(randomThings[0]);
 randomThings[2] = "World";
 // Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
 console.log(randomThings);
+
+// D. Chaning Values
+// Given the following array
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+
+// What would you write to access the 3rd element of the array?
+console.log(ourClass[2]);
+// Change the value of "Github" to "Octocat"
+ourClass[4] = "Octocat";
+// Add a new element, "Cloud City" to the array
+ourClass.push("Cloud City");
+console.log(ourClass);
+
+// E. Mixing It Up
+// Note: You don't really need .splice()for these. You could use it, but there are simpler array methods that are more appropriate.
+
+// Given the following array:
+const myArray = [5, 10, 500, 20];
+
+// Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
+myArray.push("Aegon", "Cookies");
+// Remove the 5from the beginning of the array.
+myArray.shift(myArray[4]);
+// Add the string "Bob Marley"to the beginning of the array.
+myArray.unshift("Bob Marley");
+
+// Remove the string of your choice from the end of the array.
+myArray.shift();
+// Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
+console.log(myArray.reverse());
+
+// F. Biggie Smalls
+// Create a variable that contains an integer.
+
+// Write an if ... else statement that:
+num = 500;
+// console.log()s "little number" if the number is entered is less than 100
+if (num < 100) {
+  console.log("little number");
+  // console.log()s big numberif the number is greater than or equal to 100.
+} else {
+  console.log("big number");
+}
+
+// G. Monkey in the middle
+// Write an if ... else if ... elsestatement:
+num = 5;
+// console.log()little number if the number entered is less than 5.
+if (num < 5) {
+  console.log("little number");
+  // If the number entered is more than 10, log big number.
+} else if (num > 10) {
+  console.log("big number");
+  // Otherwise, log "monkey".
+} else {
+  console.log("monkey");
+}
