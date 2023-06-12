@@ -119,3 +119,47 @@ for (i = 0; i <= 100; i++) {
     console.log("I found a number " + i + ".");
   }
 }
+
+// D Bank Account
+// Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+bank_account = 0;
+for (let i = 1; i <= 10; i++) {
+  bank_account = bank_account += i;
+  console.log(bank_account);
+}
+// Check your work! Your bank_account should have $55 in it.
+
+// You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+// Check your work! Your bank_account should have $10,100 in it.
+bankAccount = 0;
+for (let i = 1; i <= 100; i++) {
+  bankAccount = bankAccount += i * 2;
+  console.log(bankAccount);
+}
+
+// III Arrays & Flow Control
+// A Talk About It
+// What are the things in an array called?
+// An Element
+// Do Arrays guarantee those things will be in order?
+// No
+// What real-life thing could you model with an array?
+// A shopping list
+
+// B. Easy Does It
+// Create an array that contains three quotes and store it in a variable called quotes
+let quotes = [
+  "I'm gonna make him an offer he can't refuse",
+  "Here's looking at you kid",
+  "You're gonna need a bigger boat",
+];
+
+// C. Access Arrays
+// Given the following array
+const randomThings = [1, 10, "Hello", true];
+// How do you access the 1st element in the array?
+console.log(randomThings[0]);
+// Change the value of "Hello"to "World"
+randomThings[2] = "World";
+// Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
+console.log(randomThings);
