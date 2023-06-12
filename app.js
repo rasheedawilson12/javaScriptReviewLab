@@ -17,3 +17,22 @@
 // What is pseudocoding and why should you do it?
 
 // What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
+
+// B. Strings
+// For all other questions that involve writing code, you can solve them via the following instructions.
+
+// Create a variable called firstVariable
+// Assign it the value of the string "Hello World"
+let firstVariable = "Hello World";
+// Change the value of this variable to some number
+firstVariable = 7;
+// Store the value of firstVariablein a new variable called secondVariable
+let secondVariable = firstVariable;
+// Change the value of secondVariableto any string.
+secondVariable = "Apple";
+// What is the value of firstVariable?
+console.log(firstVariable);
+// The value of firstVariable is 7
+// Create a variable called yourNameand set it equal to your name as a string. Then, write an expression that takes the string "Hello, my name is " and the variable yourNameso that it returns a new string with them concatenated.
+let yourName = "Cedra";
+console.log("Hello my name is " + yourName);
